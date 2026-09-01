@@ -2,6 +2,7 @@
 $firstName = " Rohan";
 $lastName = "Shrestha";
 $middleName = "rohan";
+$car = "mercedes benz, audi, bmw, toyota, honda";
 $fullName = $firstName . $lastName; // Concatenate first name and last name
 echo "Full Name: " . $fullName . "<br>";//output: Full Name: Rohan Shrestha
 
@@ -82,8 +83,8 @@ if ($chr !== false) {
 $reversed = strrev($middleName); // Reverse the string
 echo "Reversed middle name: " . $reversed . "<br>";//output: Reversed middle name: nahoR
 
-strtok($lastName, " "); // Tokenize the string using space as a delimiter
-$token = strtok($lastName, " "); // Tokenize the string using space as a delimiter
+strtok($car, " "); // Tokenize the string using space as a delimiter
+$token = strtok($car, " "); // Tokenize the string using space as a delimiter
 while ($token !== false) {
     echo "Token: " . $token . "<br>";//output: Token: Shrestha
     $token = strtok(" "); // Get the next token 
